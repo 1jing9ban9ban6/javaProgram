@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <filter>
+        <filter-name>EncodingFilter</filter-name>
+        <filter-class>com.jing.stroe.web.filter.EncodingFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>EncodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+<!-- 用户的servlet -->
+    <servlet>
+        <servlet-name>UserServlet</servlet-name>
+        <servlet-class>com.jing.stroe.web.servlet.UserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserServlet</servlet-name>
+        <!-- 映射请求地址-->
+        <url-pattern>/UserServlet</url-pattern>
+    </servlet-mapping>
+    <!-- 首页分类的servlet -->
+    <servlet>
+        <servlet-name>IndexServlet</servlet-name>
+        <servlet-class>com.jing.stroe.web.servlet.IndexServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>IndexServlet</servlet-name>
+        <!-- 映射请求地址-->
+        <url-pattern>/IndexServlet</url-pattern>
+    </servlet-mapping>
+    <!-- 抽取header.jsp的获取首页分类servlet -->
+    <servlet>
+        <servlet-name>CategoryServlet</servlet-name>
+        <servlet-class>com.jing.stroe.web.servlet.CategoryServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CategoryServlet</servlet-name>
+        <!-- 映射请求地址-->
+        <url-pattern>/CategoryServlet</url-pattern>
+    </servlet-mapping>
+    <!-- 抽取商品的servlet -->
+    <servlet>
+        <servlet-name>ProductServlet</servlet-name>
+        <servlet-class>com.jing.stroe.web.servlet.ProductServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProductServlet</servlet-name>
+        <!-- 映射请求地址-->
+        <url-pattern>/ProductServlet</url-pattern>
+    </servlet-mapping>
+    <!-- 抽取购物车模块的servlet -->
+    <servlet>
+        <servlet-name>CartServlet</servlet-name>
+        <servlet-class>com.jing.stroe.web.servlet.CartServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CartServlet</servlet-name>
+        <!-- 映射请求地址-->
+        <url-pattern>/CartServlet</url-pattern>
+    </servlet-mapping>
+    <!-- 抽取订单模块的servlet -->
+    <servlet>
+        <servlet-name>OrderServlet</servlet-name>
+        <servlet-class>com.jing.stroe.web.servlet.OrderServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>OrderServlet</servlet-name>
+        <!-- 映射请求地址-->
+        <url-pattern>/OrderServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>AdminCategoryServlet</servlet-name>
+        <servlet-class>com.jing.stroe.web.servlet.AdminCategoryServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminCategoryServlet</servlet-name>
+        <!-- 映射请求地址-->
+        <url-pattern>/AdminCategoryServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>AdminProductServlet</servlet-name>
+        <servlet-class>com.jing.stroe.web.servlet.AdminProductServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminProductServlet</servlet-name>
+        <!-- 映射请求地址-->
+        <url-pattern>/AdminProductServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>AdminOrderServlet</servlet-name>
+        <servlet-class>com.jing.stroe.web.servlet.AdminOrderServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminOrderServlet</servlet-name>
+        <!-- 映射请求地址-->
+        <url-pattern>/AdminOrderServlet</url-pattern>
+    </servlet-mapping>
+    <!-- 配置过滤器 -->
+    <filter-mapping>
+        <filter-name>PrivilegeFilter</filter-name>
+        <url-pattern>/jsp/order_info.jsp</url-pattern>
+        <url-pattern>/jsp/cart.jsp</url-pattern>
+        <url-pattern>/jsp/order_list.jsp</url-pattern>
+    </filter-mapping>
+<!-- session的默认时长 -->
+<!--    <session-config>-->
+<!--        <session-timeout>20</session-timeout>-->
+<!--    </session-config>-->
+</web-app>

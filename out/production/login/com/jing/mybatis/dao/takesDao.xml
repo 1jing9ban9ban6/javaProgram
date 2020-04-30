@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace 值是对应的接口的全名称 -->
+<mapper namespace="com.jing.mybatis.dao.takesDao">
+<select id="findTakesAndStudent" resultMap="takesMap">
+<!-- 一对一的查询 -->
+    SELECT takes.*,student.* from takes,student WHERE takes.ID = student.ID
+</select>
+    <resultMap id="takesMap" type="takes">
+        <id property="courseId" column="course_id"/>
+        <result property="secId" column="sec_id"/>
+        <result property="semester" column="semester"/>
+        <result property="year" column="year"/>
+        <result property="grade" column="grade"/>
+        <association property="student" javaType="student">
+            <id property="ID" column="ID"/>
+            <result property="name" column="name"/>
+            <result property="dept_name" column="dept_name"/>
+            <result property="tot_cred" column="tot_cred"/>
+        </association>
+    </resultMap>
+</mapper>

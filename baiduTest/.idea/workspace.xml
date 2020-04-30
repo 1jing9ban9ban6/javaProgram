@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="514660f2-e658-4009-9d7c-2ac07f360b22" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/src/Toolee/sortDemoInJava" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="ProjectId" id="1ZniyOqiHRFSFH9KP7KSUSfRCDw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="G:/Git/bin/git.exe" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.test3">
+    <configuration name="SortDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Toolee.SortDemo" />
+      <module name="baiduTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Toolee.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="hw2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="learn.hw2" />
+      <module name="baiduTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="learn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="learn.test1" />
+      <module name="baiduTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="learn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="learn.test2" />
+      <module name="baiduTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="learn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="learn.test3" />
+      <module name="baiduTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="learn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.test3" />
+        <item itemvalue="Application.test2" />
+        <item itemvalue="Application.test1" />
+        <item itemvalue="Application.SortDemo" />
+        <item itemvalue="Application.hw2" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="514660f2-e658-4009-9d7c-2ac07f360b22" name="Default Changelist" comment="" />
+      <created>1585481512413</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585481512413</updated>
+      <workItem from="1585481516721" duration="2394000" />
+      <workItem from="1585561755452" duration="10099000" />
+      <workItem from="1585632279458" duration="22000" />
+      <workItem from="1585825668296" duration="7247000" />
+      <workItem from="1585877940766" duration="4350000" />
+      <workItem from="1586177057622" duration="3841000" />
+      <workItem from="1586247792488" duration="9837000" />
+      <workItem from="1586314147634" duration="10160000" />
+      <workItem from="1586411065598" duration="254000" />
+      <workItem from="1586411349860" duration="32000" />
+      <workItem from="1586411399069" duration="9000" />
+      <workItem from="1586411455370" duration="3000" />
+      <workItem from="1586480401138" duration="1633000" />
+      <workItem from="1586585704932" duration="15417000" />
+      <workItem from="1586612670736" duration="2939000" />
+      <workItem from="1586658568696" duration="8370000" />
+      <workItem from="1586678474981" duration="7175000" />
+      <workItem from="1586756963230" duration="19000" />
+      <workItem from="1586825297454" duration="635000" />
+      <workItem from="1586917221923" duration="157000" />
+      <workItem from="1587210025501" duration="5105000" />
+      <workItem from="1587347924448" duration="28000" />
+      <workItem from="1587369573497" duration="4482000" />
+      <workItem from="1587523097018" duration="116000" />
+      <workItem from="1587553276503" duration="3293000" />
+      <workItem from="1587608420955" duration="7000" />
+      <workItem from="1587608440779" duration="1311000" />
+      <workItem from="1587980833194" duration="3475000" />
+      <workItem from="1588150807254" duration="2356000" />
+      <workItem from="1588226595809" duration="8000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Toolee/SortDemo.java</url>
+          <line>99</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

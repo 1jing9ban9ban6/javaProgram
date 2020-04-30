@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace 值是对应的接口的全名称 -->
+<mapper namespace="com.jing.mybatis.dao.instructorDao">
+<select id="findInstructorByNameAndSalary" parameterType="instructor" resultMap="instructorMap">
+<include refid="query">
+
+</include>
+
+</select>
+    <delete id="deleteInstructor" parameterType="com.jing.mybatis.vo.instructorVo">
+        delete from instructor
+        <where>
+            <foreach collection="ids" open="ID in(" close=")" item="id" separator=",">
+                #{id}
+            </foreach>
+        </where>
+    </delete>
+    <sql id="query">
+        select * from instructor
+        <!-- where 标签代表多条件查询 会过滤掉多余的AND字符-->
+        <where>
+            <if test="instructorName != null and instructorName != '' ">
+                and name like '%${instructorName}%'
+            </if>
+            <if test="salary!= null">
+                and salary = #{salary}
+            </if>
+        </where>
+    </sql>
+<resultMap id="instructorMap" type="instructor">
+   <id property="Id" column="ID"/>
+    <result property="instructorName" column="name"/>
+    <result property="deptName" column="dept_name"/>
+    <result property="salary" column="salary"/>
+</resultMap>
+
+</mapper>

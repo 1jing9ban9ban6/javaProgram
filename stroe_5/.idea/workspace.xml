@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="stroe_5:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8de290ce-d20c-4694-8789-585f35812c2e" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1WvjIrX00DpgHFA1pNkLSLaC1Pb" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.jing.stroe.web.servlet" />
+      <recent name="com.jing.stroe.domain" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\javaprog\stroe_5\src\com\jing\stroe\utils" />
+      <recent name="G:\javaprog\stroe_5\web\jsp" />
+      <recent name="G:\javaprog\stroe_5\web\WEB-INF\lib" />
+      <recent name="G:\javaprog\stroe_5\src\com\jing\stroe\test" />
+      <recent name="G:\javaprog\stroe_5\src\com\jing\stroe\web\base" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.store_5">
+    <configuration name="CategoryServiceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jing.stroe.service.ServiceImpl.CategoryServiceImpl" />
+      <module name="store_5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jing.stroe.service.ServiceImpl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IndexServlet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jing.stroe.web.servlet.IndexServlet" />
+      <module name="store_5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jing.stroe.web.servlet.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderDaoImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jing.stroe.dao.daoImpl.OrderDaoImpl" />
+      <module name="store_5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jing.stroe.dao.daoImpl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderServiceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jing.stroe.service.ServiceImpl.OrderServiceImpl" />
+      <module name="store_5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jing.stroe.service.ServiceImpl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductServiceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jing.stroe.service.ServiceImpl.ProductServiceImpl" />
+      <module name="store_5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jing.stroe.service.ServiceImpl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="store_5" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.94" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="stroe_5:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/store_5" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_stroe_5" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="61041" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="stroe_5:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.CategoryServiceImpl" />
+      <item itemvalue="Application.IndexServlet" />
+      <item itemvalue="Application.ProductServiceImpl" />
+      <item itemvalue="Application.OrderDaoImpl" />
+      <item itemvalue="Application.OrderServiceImpl" />
+      <item itemvalue="Tomcat Server.store_5" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.OrderServiceImpl" />
+        <item itemvalue="Application.OrderDaoImpl" />
+        <item itemvalue="Application.ProductServiceImpl" />
+        <item itemvalue="Application.IndexServlet" />
+        <item itemvalue="Application.CategoryServiceImpl" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8de290ce-d20c-4694-8789-585f35812c2e" name="Default Changelist" comment="" />
+      <created>1580036885900</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580036885900</updated>
+      <workItem from="1580036889455" duration="3429000" />
+      <workItem from="1580089558081" duration="3321000" />
+      <workItem from="1580108833144" duration="10428000" />
+      <workItem from="1580176399114" duration="4511000" />
+      <workItem from="1580193138143" duration="18047000" />
+      <workItem from="1580264187447" duration="4792000" />
+      <workItem from="1580287190458" duration="9472000" />
+      <workItem from="1580437001548" duration="14044000" />
+      <workItem from="1580471940869" duration="6716000" />
+      <workItem from="1580646231034" duration="1889000" />
+      <workItem from="1580712172199" duration="9560000" />
+      <workItem from="1580784000218" duration="4309000" />
+      <workItem from="1580796972311" duration="11350000" />
+      <workItem from="1581250342493" duration="2172000" />
+      <workItem from="1581296721711" duration="11253000" />
+      <workItem from="1581326160572" duration="5293000" />
+      <workItem from="1581388200539" duration="5478000" />
+      <workItem from="1581401571072" duration="8146000" />
+      <workItem from="1581477704066" duration="639000" />
+      <workItem from="1581478362825" duration="55000" />
+      <workItem from="1582105483409" duration="123000" />
+      <workItem from="1582206266689" duration="29000" />
+      <workItem from="1583148501755" duration="244000" />
+      <workItem from="1583156208410" duration="795000" />
+      <workItem from="1583197563415" duration="35000" />
+      <workItem from="1583224755837" duration="745000" />
+      <workItem from="1583225523467" duration="32000" />
+      <workItem from="1583298482518" duration="11143000" />
+      <workItem from="1585213685599" duration="1421000" />
+      <workItem from="1585216724688" duration="4284000" />
+      <workItem from="1585270124041" duration="1854000" />
+      <workItem from="1586866693707" duration="560000" />
+      <workItem from="1587611919498" duration="2874000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

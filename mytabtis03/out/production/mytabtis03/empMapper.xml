@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--通过命名空间 来制定和那个接口进行绑定 然后通过id 来绑定接口中要执行的-->
+<mapper namespace="jing.mapper.empMapper">
+<!--    List<Emp> getEmpByMore(Emp emp);-->
+    <select id="getEmpByMore" resultType="jing.bean.Emp">
+        select * from emp
+        <trim prefix="where" prefixOverrides="and">
+            <if test="eid != null">
+                and eid = #{eid}
+            </if>
+            <if test="ename != null and ename != '' ">
+                and ename = #{ename}
+            </if>
+            <if test="age != null">
+                and age = #{age}
+            </if>
+            <if test="sex == 1 or sex ==0 ">
+                and sex = #{sex}
+            </if>
+        </trim>
+    </select>
+<!--    List<Emp> getEmpByChoose(Emp emp);-->
+    <select id="getEmpByChoose" resultType="jing.bean.Emp">
+        select * from emp where
+        <choose>
+            <when test="eid != null">
+                eid = #{eid}
+            </when>
+            <when test="ename != null and ename != '' ">
+                ename = #{ename}
+            </when>
+            <when test="age != null">
+                age = #{age}
+            </when>
+            <when test="sex == 1 or sex ==0 ">
+                sex = #{sex}
+            </when>
+        </choose>
+    </select>
+<!--    void addEmp(Emp emp);-->
+    <insert id="addEmp">
+        insert into emp(eid, ename, age, sex) values (
+        #{eid},
+        #{ename},
+        #{age},
+        <choose>
+            <when test="sex==1">'男'</when>
+            <when test="sex==0">'女'</when>
+        </choose>
+        )
+    </insert>
+<!--    void deleteMoreEmp(String eids);-->
+    <delete id="deleteMoreEmp" >
+        delete from emp where eid in (${value})
+    </delete>
+<!--    void deleteMoreEmp1(List<String> eids);-->
+<!-- index 若是list 则是下标 若是map 则是key-->
+    <delete id="deleteMoreEmp1" >
+        delete from emp where eid in
+        <foreach collection="list" open="(" close=")" item="eid" separator=",">
+            #{eid}
+        </foreach>
+    </delete>
+<!--    void updateMore(@Param("emps")Emp [] emps);-->
+    <delete id="updateMore" >
+        <foreach collection="emps" item="emp" separator=";">
+            update emp set ename=#{emp.ename}, age=#{emp.age}, sex=#{emp.sex} where eid = #{emp.eid}
+        </foreach>
+    </delete>
+</mapper>

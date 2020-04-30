@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+<!-- 通过注解扫描 注解所在的包 用了注解必须扫描 不然spring看不见，而且不用注解就扫描同样不行-->
+<!-- 而且他的id是类首字母的小写 可以通过getBean获取-->
+<!-- 但是 总是加载包 会很大 我们可以不根据包 而根据注解 来扫描 默认是扫描所有类
+如果我加了 user-default 为false 就可以让下面的话起作用-->
+<!--    <context:component-scan base-package="com.jing.ioc.userModel" use-default-filters="false">-->
+<!--&lt;!&ndash;  我现在 只包含 controller 的注解 在设置的包下再次通过注解 包含某几个类&ndash;&gt;-->
+<!--&lt;!&ndash;  annotation 是 注解 assignable 是类的类型 在设置的包下再次通过类型 包含某个类&ndash;&gt;-->
+<!--&lt;!&ndash;  就是 package是包 然后 有注解类型  有类 什么都有&ndash;&gt;-->
+<!--        <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>-->
+<!--        <context:include-filter type="annotation" expression="org.springframework.stereotype.Repository"/>-->
+<!--        <context:include-filter type="assignable" expression="com.jing.ioc.userModel.service.userServiceImpl"/>-->
+<!--    </context:component-scan>-->
+<!--    <context:component-scan base-package="com.jing.ioc.userModel" use-default-filters="true">-->
+<!--&lt;!&ndash;如果用排除的话 你得先全能扫描上  所以 那个包的默认 要全部扫描 这样的话是都扫描到了 &ndash;&gt;-->
+<!--        <context:exclude-filter type="assignable" expression="com.jing.ioc.userModel.service.userServiceImpl"/>-->
+<!--    </context:component-scan>-->
+    <context:component-scan base-package="com.jing.ioc.userModel" use-default-filters="false">
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Service"/>
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Repository"/>
+    </context:component-scan>
+</beans>

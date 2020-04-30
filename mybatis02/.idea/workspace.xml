@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="14ca5ad3-6256-452d-817b-60fb4145803c" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="my-cfg.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/conf/empMapper.xml" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProjectId" id="1Z0d85D9wXRREgAw05v8wYZikkD" />
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\javaprog\mybatis02\conf" />
+      <recent name="G:\javaprog\mybatis02\conf\jing.mapper" />
+      <recent name="G:\javaprog\mybatis02\src\jing\mapper" />
+      <recent name="G:\javaprog\mybatis02\conf\mapper" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\javaprog\mybatis02\src" />
+      <recent name="G:\javaprog\mybatis02\lib" />
+      <recent name="G:\javaprog\mybatis02\conf" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.testEmp.test5">
+    <configuration name="testEmp.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jing.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="jing.test" />
+      <option name="MAIN_CLASS_NAME" value="jing.test.testEmp" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testEmp.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jing.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="jing.test" />
+      <option name="MAIN_CLASS_NAME" value="jing.test.testEmp" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testEmp.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jing.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="jing.test" />
+      <option name="MAIN_CLASS_NAME" value="jing.test.testEmp" />
+      <option name="METHOD_NAME" value="test3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testEmp.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jing.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="jing.test" />
+      <option name="MAIN_CLASS_NAME" value="jing.test.testEmp" />
+      <option name="METHOD_NAME" value="test4" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testEmp.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jing.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="jing.test" />
+      <option name="MAIN_CLASS_NAME" value="jing.test.testEmp" />
+      <option name="METHOD_NAME" value="test5" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.testEmp.test5" />
+        <item itemvalue="JUnit.testEmp.test4" />
+        <item itemvalue="JUnit.testEmp.test3" />
+        <item itemvalue="JUnit.testEmp.test2" />
+        <item itemvalue="JUnit.testEmp.test1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="14ca5ad3-6256-452d-817b-60fb4145803c" name="Default Changelist" comment="" />
+      <created>1583979782916</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583979782916</updated>
+      <workItem from="1583979785324" duration="39000" />
+      <workItem from="1583979835706" duration="5608000" />
+      <workItem from="1583994279816" duration="7318000" />
+      <workItem from="1584062689376" duration="643000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

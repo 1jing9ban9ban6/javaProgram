@@ -1,0 +1,32 @@
+@startuml
+
+PersonServiceBean..>PersonDao
+PersonServiceBean..>Person
+PersonServiceBean..>IDCard
+PersonServiceBean..>Department
+
+class PersonServiceBean {
+PersonDao PersonDao
+save(person:Person):void
+getIDCart(personId:Integer):IDCard
+modify():void
+}
+class Person {
+
+}
+class IDCard {
+
+
+}
+class PersonDao {
+
+
+}
+class Department {
+
+}
+
+
+
+@enduml
+再类中用到了对方，成员属性，返回类型，方法形参，方法中局部变量

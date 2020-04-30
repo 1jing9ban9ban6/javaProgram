@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace 值是对应的接口的全名称 -->
+<mapper namespace="com.jing.mapper.StudentMapper">
+    <!--
+    public List<Products> getAllProducts() ;
+    select 是一个只能写select语句的标签
+    id 是select标签的属性  对应接口的具体的一个方法  值就是方法名
+    resultType 是查询语句后返回的结果封装的pojo类型
+    parameterType   方法要输入给sql语句的参数
+     -->
+<!-- ${} 代表字符串拼接  last_insert_id 代表返回自增的id值-->
+    <select id="getStudentById" resultType="com.jing.pojo.student" parameterType="java.lang.String">
+  select  *  from student where ID = #{ID}
+</select>
+    <select id="getStudentByName" resultType="com.jing.pojo.student" parameterType="java.lang.String">
+  select  *  from student where name like "%${value}%"
+</select>
+    <insert id="addStudent" parameterType="com.jing.pojo.student">
+        <!-- <selectKey order="AFTER" keyProperty="ID" resultType="String">
+             select LAST_INSERT_ID()
+        </selectKey>-->
+insert into student values (#{ID},#{name},#{dept_name},#{tot_cred})
+</insert>
+    <update id="updateStudent" parameterType="com.jing.pojo.student">
+        update student set name=#{name},dept_name=#{dept_name},tot_cred=#{tot_cred} where ID=#{ID}
+    </update>
+    <delete id="deleteStudent" parameterType="java.lang.String">
+        delete from student where ID= #{value }
+    </delete>
+</mapper>

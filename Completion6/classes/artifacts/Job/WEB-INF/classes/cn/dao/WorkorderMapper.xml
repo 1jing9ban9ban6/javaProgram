@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.dao.WorkorderMapper">
+
+        <select id="getproject" resultType="Project">
+		SELECT * FROM project
+	    </select>
+       
+        <insert id="add" parameterType="Workorder">
+		INSERT INTO workorder (projectId,executor,description,orderLevel,createDate)
+		VALUES(#{projectId},#{executor},#{description},#{orderLevel},#{createDate});
+	    </insert>
+        
+        <resultMap type="Workorder" id="List">
+          <result property="id" column="id"/>
+		  <result property="projectName" column="name"/>
+        </resultMap>
+        <select id="getWorkorderList" resultMap="List">
+		    SELECT w.*,p.projectName as name FROM workorder w,project p WHERE w.projectId=p.id ORDER BY w.id DESC
+	    </select>
+	    
+
+</mapper>

@@ -1,0 +1,20 @@
+@startuml
+
+abstract class DaoSupport{
+save(entry:Object):void
+delete(id:Object):void
+}
+DaoSupport <|-- PersonServiceBean
+class PersonServiceBean {
+
+}
+
+
+@enduml
+Class01 <|-- Class02:泛化
+<|..接口实现
+Class03 <-- Class04:关联
+Class05 *-- Class06:组合
+Class07 o-- Class08:聚合
+Class09 -- Class10
+PersonServiceBean..>Department 依赖

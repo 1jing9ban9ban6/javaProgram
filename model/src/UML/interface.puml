@@ -1,0 +1,14 @@
+@startuml
+
+PersonService <|.. PersonServiceImpl
+interface PersonService{
+delete(id:Integer):void
+}
+
+
+class PersonServiceImpl {
+delete(id:Integer):void
+}
+
+
+@enduml

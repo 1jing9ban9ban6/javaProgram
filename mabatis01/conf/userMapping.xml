@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--通过命名空间 来制定和那个接口进行绑定 然后通过id 来绑定接口中要执行的-->
+<mapper namespace="com.jing.bean.userDao">
+    <select id="selectUserById" resultType="com.jing.bean.user">
+        select * from user where id = #{id}
+    </select>
+</mapper>

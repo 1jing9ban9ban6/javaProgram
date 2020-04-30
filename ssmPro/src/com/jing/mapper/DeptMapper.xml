@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--通过命名空间 来制定和那个接口进行绑定 然后通过id 来绑定接口中要执行的-->
+<mapper namespace="com.jing.mapper.DeptMapper">
+<!--    List<Dept> getAllDept();-->
+    <select id="getAllDept" resultType="com.jing.bean.Dept">
+        select did, dname from dept
+    </select>
+</mapper>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <description>
+        我就是个描述标签 并没有什么卵用
+    </description>
+    <!-- 引入外部的xml -->
+    <import resource="classpath:dataSource.xml"></import>
+    <!-- 别名 -->
+    <alias name="car" alias="car2"></alias>
+    <bean id="emp" class="com.jing.ioc.auto.emp" autowire="byName">
+        <!-- byName 是用你的属性和下面bean的id进行匹配 -->
+        <!-- byType 在spring 管理的对象 能够为他赋值  那么就可以进行自动装配-->
+        <property name="eid" value="1"></property>
+        <property name="ename" value="小王"></property>
+        <property name="dept" ref="dept"></property>
+    </bean>
+    <bean id="emp1" class="com.jing.ioc.auto.emp" autowire="byType">
+        <!-- byName 是用你的属性和下面bean的id进行匹配 -->
+        <!-- byType 在spring 管理的对象 能够为他赋值  那么就可以进行自动装配-->
+        <property name="eid" value="2"></property>
+        <property name="ename" value="小哇"></property>
+    </bean>
+    <bean id="car" class="com.jing.ioc.auto.car">
+        <property name="cid" value="01"></property>
+        <property name="cname" value="奥迪"></property>
+    </bean>
+    <bean id="dept" class="com.jing.ioc.auto.dept">
+        <property name="did" value="001"></property>
+        <property name="dname" value="开发"></property>
+    </bean>
+
+</beans>

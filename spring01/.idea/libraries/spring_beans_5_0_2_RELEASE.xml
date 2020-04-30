@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="spring-beans-5.0.2.RELEASE">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/spring-beans-5.0.2.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-context-5.0.2.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-core-5.0.2.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/spring-expression-5.0.2.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://G:/黑暗之魂/ssm框架资料/spring/spring_day01/资料/spring-framework-5.0.2.RELEASE-dist/spring-framework-5.0.2.RELEASE/libs/spring-beans-5.0.2.RELEASE-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.ideaLibSources/spring-context-5.0.2.RELEASE-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!--命名空间在beans里面就有提示了 上面的网页他支持了你bean里面只能写什么 而且只写什么才有意义-->
+    <bean id="person" class="com.jing.mod.person" scope="singleton">
+<!--每一个类都是bean  交给 spring管理 id 是唯一标识 不能重复自己起的名字 class是全限定名
+ scope 是管单例还是多利-->
+<!--   property 为对象的某个属性赋值 里面的name 是属性名 value是值-->
+        <property name="id" value="11"></property>
+        <property name="name" value="校长"></property>
+    </bean>
+</beans>

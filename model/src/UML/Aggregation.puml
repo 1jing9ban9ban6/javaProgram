@@ -1,0 +1,19 @@
+@startuml
+Computer o-- Monitor
+Computer o-- Mouse
+class Monitor {
+
+}
+
+class Computer {
+Mouse mouse
+Monitor monitor
+}
+
+class Mouse {
+
+}
+
+
+@enduml
+关系可以分割

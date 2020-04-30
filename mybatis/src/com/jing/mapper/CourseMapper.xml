@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace 值是对应的接口的全名称 -->
+<mapper namespace="com.jing.mapper.CourseMapper">
+    <!--
+    public List<Products> getAllProducts() ;
+    select 是一个只能写select语句的标签
+    id 是select标签的属性  对应接口的具体的一个方法  值就是方法名
+    resultType 是查询语句后返回的结果封装的pojo类型
+    parameterType   方法要输入给sql语句的参数
+     -->
+    <select id="getAllCourse" resultType="com.jing.pojo.course">
+   select * from course
+</select>
+    <!-- 根据商品的id查询商品信息 -->
+    <select id="getCourseByCourseId" resultType="com.jing.pojo.course" parameterType="java.lang.String">
+  select  *  from course where course_id = #{id}
+</select>
+</mapper>

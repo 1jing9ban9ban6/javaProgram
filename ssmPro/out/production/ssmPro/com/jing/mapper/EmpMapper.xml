@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--通过命名空间 来制定和那个接口进行绑定 然后通过id 来绑定接口中要执行的-->
+<mapper namespace="com.jing.mapper.EmpMapper">
+
+<!--    List<Emp> getAllEmp();-->
+    <select id="getAllEmp" resultMap="EmpMap">
+        SELECT eid, ename, age, sex, d.did, d.dname
+        FROM emp e
+        LEFT JOIN dept d
+        ON e.did=d.did
+    </select>
+    <resultMap id="EmpMap" type="Emp">
+        <id column="eid" property="eid"></id>
+        <result column="ename" property="ename"></result>
+        <result column="age" property="age"></result>
+        <result column="sex" property="sex"></result>
+        <association property="dept" javaType="com.jing.bean.Dept">
+            <id column="did" property="did"></id>
+            <result column="dname" property="dname"></result>
+        </association>
+    </resultMap>
+<!--    Emp getEmpByEid(String eid);-->
+    <select id="getEmpByEid" resultMap="EmpMap">
+        SELECT eid, ename, age, sex, d.did, d.dname
+        FROM emp e
+        LEFT JOIN dept d
+        ON e.did=d.did
+        where e.eid=#{eid}
+    </select>
+<!--  void updateEmp(Emp emp);-->
+    <update id="updateEmp" >
+        update emp set
+        ename = #{ename},
+        age = #{age},
+        sex = #{sex},
+        did = #{dept.did}
+        where eid = #{eid}
+    </update>
+</mapper>

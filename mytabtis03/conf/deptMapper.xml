@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="jing.mapper.deptMapper">
+    <resultMap id="empMap" type="jing.bean.Emp">
+<!-- 自定义映射用的时候很少 用于多对一 -->
+        <id column="eid" property="eid"></id>
+        <result column="ename" property="ename"></result>
+        <result column="age" property="age"></result>
+        <result column="sex" property="sex"></result>
+<!--        <result column="did" property="dept.did"></result>-->
+<!--        <result column="dname" property="dept.dname"></result>-->
+        <association property="dept" javaType="jing.bean.Dept">
+            <id column="e.did" property="did"></id>
+            <result column="d.dname" property="dname"></result>
+        </association>
+    </resultMap>
+    <select id="getAllEmp" resultMap="empMap">
+        SELECT eid, ename, age, sex, e.did, d.dname FROM emp e LEFT JOIN dept d ON e.did = d.did
+    </select>
+    <resultMap id="empMap1" type="jing.bean.Emp">
+        <!-- 自定义映射用的时候很少 用于多对一 -->
+        <id column="eid" property="eid"></id>
+        <result column="ename" property="ename"></result>
+        <result column="age" property="age"></result>
+        <result column="sex" property="sex"></result>
+        <!--        <result column="did" property="dept.did"></result>-->
+        <!--        <result column="dname" property="dept.dname"></result>-->
+        <association property="dept" select="jing.mapper.deptMapper.getDeptById" column="did"/>
+    </resultMap>
+    <select id="getEmpById" resultMap="empMap1">
+        select eid, ename, age, sex, did from emp where eid = #{eid}
+    </select>
+
+    <select id="getDeptById" resultType="jing.bean.Dept">
+        select did, dname from dept where did = #{did}
+    </select>
+    <resultMap id="DeptEmpMap" type="jing.bean.Dept">
+        <id column="did" property="did"></id>
+        <result column="dname" property="dname"></result>
+        <collection property="emps" ofType="jing.bean.Emp">
+            <id column="eid" property="eid"></id>
+            <result column="ename" property="ename"></result>
+            <result column="age" property="age"></result>
+            <result column="sex" property="sex"></result>
+        </collection>
+    </resultMap>
+    <select id="getDeptEmpById" resultMap="DeptEmpMap">
+        select d.did, d.dname, e.eid, e.ename, e.age, e.sex FROM dept d LEFT JOIN emp e on d.did = e.did where d.did = #{did}
+    </select>
+
+    <select id="getEmpByEid" resultType="jing.bean.Emp">
+        select eid, ename, age, sex from emp where did = #{id}
+    </select>
+
+    <resultMap id="DeptByIdStep" type="jing.bean.Dept">
+        <id column="did" property="did"></id>
+        <result column="dname" property="dname"></result>
+        <association property="emps" select="jing.mapper.deptMapper.getEmpByEid" column="{id=did}"></association>
+    </resultMap>
+    <select id="getDeptByIdStep" resultMap="DeptByIdStep">
+        select did, dname from dept where did = #{did}
+    </select>
+</mapper>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="139dd4e5-b29c-4f16-8d7b-adf22fb07e3d" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="spring-beans.schema" />
+      </list>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/conf/book-xml.xml" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/com/jing/spring/bookXml/dao/bookDaoImpl.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProjectId" id="1YmPITgN2rBt2Wf3i88HmAX8GpF" />
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../springMVC01" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.jing.spring.bookXml" />
+      <recent name="com.jing.spring.bookXml.controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\javaprog\spring03\src\com\jing\spring\bookXml\dao" />
+      <recent name="G:\javaprog\spring03\src\com\jing\spring\bookXml\service" />
+      <recent name="G:\javaprog\spring03\src\com\jing\spring\bookXml\controller" />
+      <recent name="G:\javaprog\spring03\lib" />
+      <recent name="G:\javaprog\spring03\src\com\jing\spring\xmlaop" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.test1.test1 (2)">
+    <configuration name="test1 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jing.spring.jdbcTem.test1" />
+      <module name="spring03" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jing.spring.jdbcTem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test1.test1 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring03" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jing.spring.book.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jing.spring.book" />
+      <option name="MAIN_CLASS_NAME" value="com.jing.spring.book.test1" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test1.test1 (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring03" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jing.spring.bookXml.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jing.spring.bookXml" />
+      <option name="MAIN_CLASS_NAME" value="com.jing.spring.bookXml.test1" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test1.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring03" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jing.spring.jdbcTem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jing.spring.jdbcTem" />
+      <option name="MAIN_CLASS_NAME" value="com.jing.spring.jdbcTem.test1" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test1.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring03" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jing.spring.jdbcTem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jing.spring.jdbcTem" />
+      <option name="MAIN_CLASS_NAME" value="com.jing.spring.jdbcTem.test1" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.test1.test1 (2)" />
+        <item itemvalue="JUnit.test1.test1 (1)" />
+        <item itemvalue="JUnit.test1.test2" />
+        <item itemvalue="JUnit.test1.test1" />
+        <item itemvalue="Application.test1 (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="139dd4e5-b29c-4f16-8d7b-adf22fb07e3d" name="Default Changelist" comment="" />
+      <created>1583544717008</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583544717008</updated>
+      <workItem from="1583544720253" duration="6385000" />
+      <workItem from="1583555221063" duration="14324000" />
+      <workItem from="1583591026023" duration="834000" />
+      <workItem from="1583632433050" duration="6289000" />
+      <workItem from="1583648881426" duration="36000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

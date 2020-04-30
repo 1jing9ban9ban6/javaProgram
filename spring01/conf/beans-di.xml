@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/util
+       http://www.springframework.org/schema/util/spring-util-4.1.xsd">
+
+    <bean id="s1" class="com.jing.di.student">
+        <property name="id">
+            <value>10000</value>
+        </property>
+        <!-- 通过set方法来赋值 -->
+        <property name="name" value="小王"></property>
+        <property name="age" value="18"></property>
+        <property name="sex" value="女"></property>
+    </bean>
+    <bean id="s2" class="com.jing.di.student">
+        <constructor-arg value="10086"></constructor-arg>
+        <constructor-arg index="1" type="java.lang.Integer" value="10086"></constructor-arg>
+        <constructor-arg value="10086"></constructor-arg>
+        <constructor-arg value="10086"></constructor-arg>
+    </bean>
+    <bean id="s4" class="com.jing.di.student" p:age="18">
+        <property name="id" value="10010"></property>
+        <!-- 通过set方法来赋值 -->
+        <property name="name" value="小李"></property>
+        <property name="sex" value="女"></property>
+        <property name="teacher">
+            <!-- 通过内部bean 给属性附一个引用 -->
+            <bean id="tt" class="com.jing.di.teacher">
+                <property name="tId" value="12"></property>
+                <property name="tName" value="xiaosan"></property>
+            </bean>
+        </property>
+    </bean>
+    <bean id="s3" class="com.jing.di.student" p:age="18">
+        <property name="id" value="10010"></property>
+        <!-- 通过set方法来赋值 -->
+        <property name="name" value="小李"></property>
+        <property name="sex" value="女"></property>
+        <property name="teacher" ref="t1"></property>
+        <property name="teacher.tName" value="xiaowang"></property>
+    </bean>
+
+    <bean id="t1" class="com.jing.di.teacher">
+        <property name="tId" value="101"></property>
+    </bean>
+
+    <bean id="t2" class="com.jing.di.teacher">
+        <property name="tId" value="101"></property>
+        <property name="tName" value="tu"></property>
+        <property name="studentList">
+            <list value-type="com.jing.di.student">
+                <ref bean="s1"></ref>
+                <ref bean="s2"></ref>
+                <ref bean="s3"></ref>
+                <ref bean="s4"></ref>
+            </list>
+        </property>
+        <property name="ints">
+            <list value-type="java.lang.Integer">
+                <value>1</value>
+                <value>1</value>
+                <value>2</value>
+            </list>
+        </property>
+    </bean>
+    <bean id="t3" class="com.jing.di.teacher">
+        <property name="tId" value="101"></property>
+        <property name="stuName">
+            <map key-type="java.lang.String" value-type="java.lang.Integer">
+                <entry key="dd" value="1"></entry>
+                <entry>
+                    <key>
+                        <value>ff</value>
+                    </key>
+                    <value>3</value>
+                </entry>
+            </map>
+        </property>
+    </bean>
+    <bean id="t4" class="com.jing.di.teacher">
+        <property name="tId" value="104"></property>
+        <property name="studentList" ref="list"></property>
+    </bean>
+    <util:list id="list" value-type="com.jing.di.student">
+        <ref bean="s1"></ref>
+        <ref bean="s2"></ref>
+        <ref bean="s3"></ref>
+        <ref bean="s4"></ref>
+    </util:list>
+    <bean id="t5" class="com.jing.di.teacher">
+        <property name="tId" value="105"></property>
+        <property name="stuName" ref="map"></property>
+    </bean>
+    <util:map id="map" key-type="java.lang.String" value-type="java.lang.Integer">
+        <entry>
+            <key>
+                <value>ff</value>
+            </key>
+            <value>12</value>
+        </entry>
+        <entry>
+            <key>
+                <value>dd</value>
+            </key>
+            <value>12</value>
+        </entry>
+    </util:map>
+
+    <bean id="t6" class="com.jing.di.teacher">
+        <property name="tId" value="105"></property>
+        <property name="studentSet">
+            <set value-type="com.jing.di.student">
+                <ref bean="s1"></ref>
+                <ref bean="s2"></ref>
+                <ref bean="s3"></ref>
+                <ref bean="s4"></ref>
+            </set>
+        </property>
+    </bean>
+
+    <bean id="t7" class="com.jing.di.teacher">
+        <property name="tId" value="107"></property>
+        <property name="studentSet" ref="set"></property>
+    </bean>
+    <util:set id="set" value-type="com.jing.di.student">
+        <ref bean="s1"></ref>
+        <ref bean="s2"></ref>
+        <ref bean="s3"></ref>
+        <ref bean="s4"></ref>
+    </util:set>
+</beans>

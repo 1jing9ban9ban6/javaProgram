@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu360.mybatis.dao.OrdersMapper">
+  <resultMap id="BaseResultMap" type="cn.edu360.mybatis.model.Orders">
+    <id column="orders_id" jdbcType="INTEGER" property="ordersId" />
+    <result column="count" jdbcType="INTEGER" property="count" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="user_id" jdbcType="INTEGER" property="userId" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    orders_id, count, status, user_id
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from orders
+    where orders_id = #{ordersId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from orders
+    where orders_id = #{ordersId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="cn.edu360.mybatis.model.Orders">
+    insert into orders (orders_id, count, status, 
+      user_id)
+    values (#{ordersId,jdbcType=INTEGER}, #{count,jdbcType=INTEGER}, #{status,jdbcType=INTEGER}, 
+      #{userId,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="cn.edu360.mybatis.model.Orders">
+    insert into orders
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="ordersId != null">
+        orders_id,
+      </if>
+      <if test="count != null">
+        count,
+      </if>
+      <if test="status != null">
+        status,
+      </if>
+      <if test="userId != null">
+        user_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="ordersId != null">
+        #{ordersId,jdbcType=INTEGER},
+      </if>
+      <if test="count != null">
+        #{count,jdbcType=INTEGER},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=INTEGER},
+      </if>
+      <if test="userId != null">
+        #{userId,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="cn.edu360.mybatis.model.Orders">
+    update orders
+    <set>
+      <if test="count != null">
+        count = #{count,jdbcType=INTEGER},
+      </if>
+      <if test="status != null">
+        status = #{status,jdbcType=INTEGER},
+      </if>
+      <if test="userId != null">
+        user_id = #{userId,jdbcType=INTEGER},
+      </if>
+    </set>
+    where orders_id = #{ordersId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="cn.edu360.mybatis.model.Orders">
+    update orders
+    set count = #{count,jdbcType=INTEGER},
+      status = #{status,jdbcType=INTEGER},
+      user_id = #{userId,jdbcType=INTEGER}
+    where orders_id = #{ordersId,jdbcType=INTEGER}
+  </update>
+  <resultMap id="BaseResultMap" type="cn.edu360.mybatis.model.Orders">
+    <id column="orders_id" jdbcType="INTEGER" property="ordersId" />
+    <result column="count" jdbcType="INTEGER" property="count" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="user_id" jdbcType="INTEGER" property="userId" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    orders_id, count, status, user_id
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from orders
+    where orders_id = #{ordersId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from orders
+    where orders_id = #{ordersId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="cn.edu360.mybatis.model.Orders">
+    insert into orders (orders_id, count, status, 
+      user_id)
+    values (#{ordersId,jdbcType=INTEGER}, #{count,jdbcType=INTEGER}, #{status,jdbcType=INTEGER}, 
+      #{userId,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="cn.edu360.mybatis.model.Orders">
+    insert into orders
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="ordersId != null">
+        orders_id,
+      </if>
+      <if test="count != null">
+        count,
+      </if>
+      <if test="status != null">
+        status,
+      </if>
+      <if test="userId != null">
+        user_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="ordersId != null">
+        #{ordersId,jdbcType=INTEGER},
+      </if>
+      <if test="count != null">
+        #{count,jdbcType=INTEGER},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=INTEGER},
+      </if>
+      <if test="userId != null">
+        #{userId,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="cn.edu360.mybatis.model.Orders">
+    update orders
+    <set>
+      <if test="count != null">
+        count = #{count,jdbcType=INTEGER},
+      </if>
+      <if test="status != null">
+        status = #{status,jdbcType=INTEGER},
+      </if>
+      <if test="userId != null">
+        user_id = #{userId,jdbcType=INTEGER},
+      </if>
+    </set>
+    where orders_id = #{ordersId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="cn.edu360.mybatis.model.Orders">
+    update orders
+    set count = #{count,jdbcType=INTEGER},
+      status = #{status,jdbcType=INTEGER},
+      user_id = #{userId,jdbcType=INTEGER}
+    where orders_id = #{ordersId,jdbcType=INTEGER}
+  </update>
+</mapper>

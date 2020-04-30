@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context-4.3.xsd
+       http://www.springframework.org/schema/tx
+       http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
+<!--扫描组件-->
+    <context:component-scan base-package="com.jing">
+        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+    </context:component-scan>
+<!--引入数据库的配置信息-->
+    <context:property-placeholder location="classpath:jdbc.properties"></context:property-placeholder>
+<!--配置数据源-->
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
+        <property name="driverClassName" value="${jdbc.driver}"></property>
+        <property name="url" value="${jdbc.url}"></property>
+        <property name="username" value="${jdbc.username}"></property>
+        <property name="password" value="${jdbc.password}"></property>
+    </bean>
+<!--声明事务管理器-->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+
+    <!--开启事务就是通过注解可以知道那个用什么事务注解驱动-->
+    <tx:annotation-driven transaction-manager="transactionManager"></tx:annotation-driven>
+
+    <!--管理mybatis操作数据库的会话对象sqlSession-->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <!--相当于spring 和mybatis链接起来 所以要把数据源给他 不是字面量 用ref-->
+        <property name="dataSource" ref="dataSource"></property>
+        <!--设置mybatis的核心文件的路径-->
+        <property name="configLocation" value="classpath:mybatis-config.xml"></property>
+        <!--设置类型别名-->
+        <property name="typeAliasesPackage" value="com.jing.bean"></property>
+        <!--映射文件的路径 是真的路径要用/ 写到最后的映射文件-->
+        <property name="mapperLocations" value="classpath:com/jing/mapper/*.xml"></property>
+    </bean>
+
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <!--自己写的时候 mapper接口要.class实现类 现在这样 只要加载配置文件
+        下面所有的mapper全部自动生成实现类而且都要由spring 管理 所以他可以作为dao层就不用自己写了-->
+        <property name="basePackage" value="com.jing.mapper"></property>
+    </bean>
+</beans>
